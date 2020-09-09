@@ -1,4 +1,4 @@
-#Arduino nano to parallel TB6560 cnc driver board adapter
+# Arduino nano to parallel TB6560 cnc driver board adapter
 
 This is my little Arduino nano to parallel TB6560 cnc driver board project. Started some time
 ago using a red TB6560 4-axis board. At the moment the TB6560 alu case version is my preferred choice 
@@ -15,12 +15,12 @@ Just work in progress current revision 1.2 using GRBL 1.1h (photos of Rev 1.2 wi
 ![Connected to tb6560](images/IMG_8607.JPG)
 ![Used boards](images/tb6560-boards-in-use.jpeg)
 
-##KiCad schema
+## KiCad schema
 ![KiCad Schema](images/kicad-schema.png)
 ##KiCad pcb wiring
 ![KiCad pcb wiring](images/kicad-pcb.png)
 
-##Pins
+## Pins
 Arduino nano | GRBL 1.1 | DB25 red pcb | DB25 alu case version
 ---|---|---|---
 D8 | Disable Stepper | 1 | 16
@@ -41,7 +41,7 @@ A2 | Cycle Start/Resume | 	 |
 A3 | Cooling Enable | 	 | 
 GND | GND | 18-25 | 18-25
 
-##Jumper on board
+## Jumper on board
 
 There are some jumpers to configure the board for the two used 4-axis board versions.
 
