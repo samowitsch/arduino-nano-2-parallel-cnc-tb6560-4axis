@@ -130,7 +130,7 @@ Arduino IDE settings:
 * Tools -> Port -> "/dev/ttyUSB0" (may vary)
 * Tools -> Programer -> "Atmel-ICE(AVR)"
 
-##Arduino nano pinout
+## Arduino nano pinout
 
 GRBL PWM enabled | GRBL
 ---|---
