@@ -1,7 +1,8 @@
 # Arduino nano to parallel TB6560 cnc driver board adapter
 
 This is my little Arduino nano to parallel TB6560 cnc driver board project. Started some time
-ago using a red TB6560 4-axis board. At the moment the TB6560 alu case version is my preferred choice 
+ago using a red TB6560 4-axis board (before that i had an green 3-axis TB6560). 
+At the moment the TB6560 alu case version is my preferred choice 
 (but over time i can not remember why the red board was annoying me).
 The adapter should also work with 3-axis TB6560 boards if the Pinout is the same.
 
