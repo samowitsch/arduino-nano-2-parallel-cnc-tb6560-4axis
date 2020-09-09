@@ -1,0 +1,43 @@
+.HEA
+.TIM Do 13 Aug 2020 21:46:57 CEST
+.APP "Eeschema 5.1.6-c6e7f7d~87~ubuntu20.04.1"
+
+.ADD_COM A1 "Arduino_Nano_v3.x"
+.ADD_COM J1 "DB25_Female_MountingHoles"
+
+
+.ADD_TER J1.22 "GND"
+.TER     J1.18
+         J1.19
+         J1.20
+         J1.21
+         A1.4
+         J1.23
+         J1.24
+         J1.25
+.ADD_TER J1.16 "DISABLE_STEPPER"
+.TER     A1.11
+.ADD_TER A1.9 "Y_DIR"
+.TER     J1.5
+         J1.9
+.ADD_TER J1.8 "Y_STEP"
+.TER     J1.4
+         A1.6
+.ADD_TER J1.7 "Z_DIR"
+.TER     A1.10
+.ADD_TER A1.7 "Z_STEP"
+.TER     J1.6
+.ADD_TER A1.8 "X_DIR"
+.TER     J1.3
+.ADD_TER J1.2 "X_STEP"
+.TER     A1.5
+.ADD_TER J1.14 "SPINDLE_ENABLE"
+.TER     A1.15
+.ADD_TER J1.12 "Z_LIMIT"
+.TER     A1.14
+.ADD_TER J1.11 "Y_LIMIT"
+.TER     A1.13
+.ADD_TER J1.10 "X_LIMIT"
+.TER     A1.12
+
+.END
