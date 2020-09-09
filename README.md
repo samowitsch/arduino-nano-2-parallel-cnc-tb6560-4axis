@@ -18,7 +18,8 @@ Just work in progress current revision 1.2 using GRBL 1.1h (photos of Rev 1.2 wi
 
 ## KiCad schema
 ![KiCad Schema](images/kicad-schema.png)
-##KiCad pcb wiring
+
+## KiCad pcb wiring
 ![KiCad pcb wiring](images/kicad-pcb.png)
 
 ## Pins
