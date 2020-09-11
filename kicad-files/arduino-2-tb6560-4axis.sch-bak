@@ -190,8 +190,6 @@ NoConn ~ 4200 4150
 NoConn ~ 4200 4050
 NoConn ~ 4200 3850
 NoConn ~ 4200 3750
-NoConn ~ 4200 3650
-NoConn ~ 4200 3550
 NoConn ~ 4200 3450
 NoConn ~ 4200 3250
 NoConn ~ 8300 2750
@@ -350,10 +348,10 @@ F 3 "" H 5900 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J7
 U 1 1 5F59CEDE
 P 6100 1500
-F 0 "J?" H 6072 1432 50  0000 R CNN
+F 0 "J7" H 6072 1432 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 6072 1523 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 1500 50  0001 C CNN
 F 3 "~" H 6100 1500 50  0001 C CNN
@@ -366,4 +364,104 @@ Text GLabel 5900 1600 0    50   Input ~ 0
 SPINDLE_PWM_INVERTED
 Text GLabel 5900 1500 0    50   Input ~ 0
 SPINDLE_PWM_SELECT
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F5A9D82
+P 2500 5150
+F 0 "SW1" H 2500 5435 50  0000 C CNN
+F 1 "SW_Push" H 2500 5344 50  0000 C CNN
+F 2 "" H 2500 5350 50  0001 C CNN
+F 3 "~" H 2500 5350 50  0001 C CNN
+	1    2500 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 3550 2    50   Input ~ 0
+FEED_HOLD
+Text GLabel 4200 3650 2    50   Input ~ 0
+CYCLE_START_RESUME
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5F5AC1C4
+P 2500 5650
+F 0 "SW2" H 2500 5935 50  0000 C CNN
+F 1 "SW_Push" H 2500 5844 50  0000 C CNN
+F 2 "" H 2500 5850 50  0001 C CNN
+F 3 "~" H 2500 5850 50  0001 C CNN
+	1    2500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5AC85F
+P 2700 5650
+F 0 "#PWR?" H 2700 5400 50  0001 C CNN
+F 1 "GND" H 2705 5477 50  0000 C CNN
+F 2 "" H 2700 5650 50  0001 C CNN
+F 3 "" H 2700 5650 50  0001 C CNN
+	1    2700 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5ACD90
+P 2700 5150
+F 0 "#PWR?" H 2700 4900 50  0001 C CNN
+F 1 "GND" H 2705 4977 50  0000 C CNN
+F 2 "" H 2700 5150 50  0001 C CNN
+F 3 "" H 2700 5150 50  0001 C CNN
+	1    2700 5150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2300 5150 0    50   Input ~ 0
+FEED_HOLD
+Text GLabel 2300 5650 0    50   Input ~ 0
+CYCLE_START_RESUME
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F5BC0DA
+P 4200 5200
+F 0 "J?" H 4172 5082 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4172 5173 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 5200 50  0001 C CNN
+F 3 "~" H 4200 5200 50  0001 C CNN
+	1    4200 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F5BC816
+P 4200 5650
+F 0 "J?" H 4172 5532 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4172 5623 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 5650 50  0001 C CNN
+F 3 "~" H 4200 5650 50  0001 C CNN
+	1    4200 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5BCC4F
+P 4000 5200
+F 0 "#PWR?" H 4000 4950 50  0001 C CNN
+F 1 "GND" H 4005 5027 50  0000 C CNN
+F 2 "" H 4000 5200 50  0001 C CNN
+F 3 "" H 4000 5200 50  0001 C CNN
+	1    4000 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5BD17C
+P 4000 5650
+F 0 "#PWR?" H 4000 5400 50  0001 C CNN
+F 1 "GND" H 4005 5477 50  0000 C CNN
+F 2 "" H 4000 5650 50  0001 C CNN
+F 3 "" H 4000 5650 50  0001 C CNN
+	1    4000 5650
+	0    1    1    0   
+$EndComp
+Text GLabel 4000 5100 0    50   Input ~ 0
+FEED_HOLD
+Text GLabel 4000 5550 0    50   Input ~ 0
+CYCLE_START_RESUME
 $EndSCHEMATC
