@@ -22,6 +22,9 @@ Just work in progress current revision 1.2 using GRBL 1.1h (photos of Rev 1.2 wi
 ## KiCad pcb wiring
 ![KiCad pcb wiring](images/kicad-pcb.png)
 
+## KiCad pcb 3d preview
+![KiCad pcb wiring](images/kicad-pcb-3d-preview.png)
+
 ## Pins
 Arduino nano | GRBL 1.1 | DB25 red pcb | DB25 alu case version
 ---|---|---|---
@@ -54,7 +57,9 @@ J3 | connect Y Step pin 4* to A Step pin 8**
 J4 | connect Y Dir pin 5* to A Dir pin 9**
 J5 | connect Spindle PWM to pin 14* or pin 17**
 J6 | Probe connector
-J7 | use PWM / inverted PWM / disable
+J7 | use PWM, inverted PWM or disable
+J8 | alternative feed hold connector
+J9 | alternative cycle start/resume connector
 
 *red board version / **alu case version
 
