@@ -6,26 +6,36 @@ At the moment the TB6560 alu case version is my preferred choice
 (but over time i can not remember why the red board was annoying me).
 The adapter should also work with 3-axis TB6560 boards if the Pinout is the same.
 
-[KiCad](https://kicad-pcb.org/) files are included.
+* [KiCad](https://kicad-pcb.org/) files are included if you have special needs.
+* Gerber files are included if you want to order your own pcb for e.g. at [jlcpsb.com](https://jlcpcb.com/)
+* STL file of simple mount plate made with OpenSCAD is included if you have a 3d printer
 
-Just work in progress current revision 1.2 using GRBL 1.1h (photos of Rev 1.2 will follow).
+Just work in progress current revision 1.3 using GRBL 1.1h (photos of Rev 1.3 will follow).
 
 ![First try](images/IMG_8604.JPG)
 ![Version history](images/IMG_8616.JPG)
 ![Revision 1.0 and 1.1](images/IMG_8617.JPG)
-![Connected to tb6560](images/IMG_8607.JPG)
+![Connected to tb6560 with simple mount](case/arduino-2-tb6560-4axis-simple-mount-02.jpg)
 ![Used boards](images/tb6560-boards-in-use.jpeg)
 
 ## KiCad schema
+
 ![KiCad Schema](images/kicad-schema.png)
 
 ## KiCad pcb wiring
+
 ![KiCad pcb wiring](images/kicad-pcb.png)
 
 ## KiCad pcb 3d preview
+
 ![KiCad pcb wiring](images/kicad-pcb-3d-preview.png)
 
+## Simple mount in OpenSCAD
+
+![Simple mount in OpenSCAD](case/arduino-2-tb6560-4axis-simple-mount-open-scad.png)
+
 ## Pins
+
 Arduino nano | GRBL 1.1 | DB25 red pcb | DB25 alu case version
 ---|---|---|---
 D8 | Disable Stepper | 1 | 16
@@ -58,21 +68,23 @@ J4 | connect Y Dir pin 5* to A Dir pin 9**
 J5 | connect Spindle PWM to pin 14* or pin 17**
 J6 | Probe connector
 J7 | use PWM, inverted PWM or disable
-J8 | alternative feed hold connector
-J9 | alternative cycle start/resume connector
+J8 | connector for alternative feed hold button
+J9 | connector for alternative cycle start/resume button
 
 *red board version / **alu case version
 
 ## PWM invert
+
 TB6560 boards use low as spindle enable and high as spindel disable (WTF!?). It is the opposite way of how GRBL handle spindle enable/PWM.
 The used invert circuit will fix this. But there is a little gap where the invert is not active during startup/shutdown.
 > !!! As a workaround for now -> power on arduino at first and power off at last again to prevent injury through spindle.
 
 ![KiCad Schema](images/PWM-Invert-Schematic_clean.png)
 
-Source: [GRBL PWM inverter circuit](https://blog.eccentricworkshop.com/grbl-pwm-inverter-circuit/)
-
-Source: [Explain the Logic NOT Gate or Inverter and its Operation with Truth Table](https://electronicspost.com/explain-the-logic-not-gate-or-inverter-and-its-operation-with-truth-table/)
+Sources: 
+* [How to setup inverting PWM signal and using +5v to switch off spindle motor? · Issue #22 · gnea/grbl · GitHub](https://github.com/gnea/grbl/issues/22)
+* [GRBL PWM inverter circuit](https://blog.eccentricworkshop.com/grbl-pwm-inverter-circuit/)
+* [Explain the Logic NOT Gate or Inverter and its Operation with Truth Table](https://electronicspost.com/explain-the-logic-not-gate-or-inverter-and-its-operation-with-truth-table/)
 
 ## My current GRBL settings
 
@@ -150,5 +162,5 @@ Just for info. Interesting board with much faster cpu and more memory.  https://
 ## other Source
 * [Des Fricklers Fräse](https://der-frickler.net/technik/frickelfraese)
 * [Make: China-Schrittmotorsteuerung](https://www.heise.de/make/artikel/3-Achs-Schrittmotorsteuerung-aus-China-1518901.html)
-
-
+* [Grbl CNC USB to TB6560 Interface using Arduino](https://www.coreforge.com/blog/2014/08/grbl-tb6560-interface/)
+* [G25 CNC Shield ](http://kclinear.com/G25/Instructions.pdf)
