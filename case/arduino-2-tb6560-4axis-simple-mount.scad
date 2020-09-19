@@ -3,42 +3,44 @@ $pcb_width = 55.9;
 $pcb_height = 63.5;
 $pcb_socket_hole_radius = 1.2;
 
+%color("yellow", 1)
 translate([-126.4,44.435,6])
-%import("arduino-2-tb6560-4axis.stl");
+import("arduino-2-tb6560-4axis.stl");
 
 
 
-
-difference(){
-    union(){
-        basePlate();
-        socket(4.45, -4.45);
-        socket(4.45 + 47,-4.45);
-        socket(4.45, -4.45 -54.6);
-        socket(4.45 + 47,-4.45 -54.6);
+color("lightblue", 1)
+union(){
+    difference(){
+        union(){
+            basePlate();
+            socket(4.45, -4.45);
+            socket(4.45 + 47,-4.45);
+            socket(4.45, -4.45 -54.6);
+            socket(4.45 + 47,-4.45 -54.6);
+        }
+        
+        socketHole(4.45, -4.45);
+        socketHole(4.45 + 47,-4.45);
+        socketHole(4.45, -4.45 -54.6);
+        socketHole(4.45 + 47,-4.45 -54.6);
     }
-    
-    socketHole(4.45, -4.45);
-    socketHole(4.45 + 47,-4.45);
-    socketHole(4.45, -4.45 -54.6);
-    socketHole(4.45 + 47,-4.45 -54.6);
+
+    translate([-5,-5,0])
+    outerMount();
+
+    translate([-5,-5 - $pcb_height + 10,0])
+    outerMount();
+
+    rotate([0,0,180])
+    translate([-$pcb_width -5,5,0])
+    outerMount();
+
+    rotate([0,0,180])
+    translate([-$pcb_width -5,$pcb_height-5])
+    outerMount();
+
 }
-
-translate([-5,-5,0])
-outerMount();
-
-translate([-5,-5 - $pcb_height + 10,0])
-outerMount();
-
-rotate([0,0,180])
-translate([-$pcb_width -5,5,0])
-outerMount();
-
-rotate([0,0,180])
-translate([-$pcb_width -5,$pcb_height-5])
-outerMount();
-
-
 
 
 
