@@ -10,13 +10,19 @@ The adapter should also work with 3-axis TB6560 boards if the Pinout is the same
 * Gerber files are included if you want to order your own pcb for e.g. at [jlcpsb.com](https://jlcpcb.com/)
 * STL file of simple mount plate made with OpenSCAD is included if you have a 3d printer
 
-Just work in progress current revision 1.3 using GRBL 1.1h (photos of Rev 1.3 will follow).
+Just work in progress current revision 1.3 using GRBL 1.1h.
 
 ![First try](images/IMG_8604.JPG)
 ![Version history](images/IMG_8616.JPG)
 ![Revision 1.0 and 1.1](images/IMG_8617.JPG)
 ![Connected to tb6560 with simple mount](case/arduino-2-tb6560-4axis-simple-mount-02.jpg)
+![Revision 1.3](images/IMG_8713.JPG)
 ![Used boards](images/tb6560-boards-in-use.jpeg)
+
+## Known bugs in rev. 1.3
+
+* holes for resistors are to close for "normal" resistors. my fault this is my first pcb project. i choose a wrong footprint.
+* silk outline for X, Y, Z leds on pcb has wrong orientation (my fault or bug in KiCad library?)
 
 ## KiCad schema
 
@@ -63,11 +69,11 @@ There are some jumpers to configure the board for the two used 4-axis board vers
 Jumper | Description
 ---|---
 J2 | connect Disable Stepper to pin 1* or pin 16** 
-J3 | connect Y Step pin 4* to A Step pin 8**
-J4 | connect Y Dir pin 5* to A Dir pin 9**
+J3 | connect Y Step pin 4 to A Step pin 8
+J4 | connect Y Dir pin 5 to A Dir pin 9
 J5 | connect Spindle PWM to pin 14* or pin 17**
 J6 | Probe connector
-J7 | use PWM, inverted PWM or disable
+J7 | use PWM, inverted PWM or disable (no jumper) 
 J8 | connector for alternative feed hold button
 J9 | connector for alternative cycle start/resume button
 
