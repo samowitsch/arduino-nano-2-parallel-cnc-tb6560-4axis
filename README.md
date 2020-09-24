@@ -7,7 +7,7 @@ At the moment the TB6560 alu case version is my preferred choice
 The adapter should also work with 3-axis TB6560 boards if the Pinout is the same.
 
 * [KiCad](https://kicad-pcb.org/) files are included if you have special needs.
-* Gerber files are included if you want to order your own pcb for e.g. at [jlcpsb.com](https://jlcpcb.com/)
+* Gerber files are included if you want to order your own pcb for e.g. at [jlcpcb.com](https://jlcpcb.com/)
 * STL file of simple mount plate made with OpenSCAD is included if you have a 3d printer
 
 Just work in progress current revision 1.3 using GRBL 1.1h.
