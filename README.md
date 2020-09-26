@@ -40,6 +40,15 @@ Just work in progress current revision 1.3 using GRBL 1.1h.
 
 ![Simple mount in OpenSCAD](case/arduino-2-tb6560-4axis-simple-mount-open-scad.png)
 
+## Revision photos
+
+Picture | Revision | Comment
+--- | --- | ---
+![KiCad pcb wiring](images/IMG_8720-rev-1.0-small.jpg) | 1.0 | first dirty revision to get rid of the spaghetti grbl adapter ;o)
+![KiCad pcb wiring](images/IMG_8720-rev-1.1-small.jpg) | 1.1 | added jumper headers for the two versions (red pcb, alu case) of the TB6560
+![KiCad pcb wiring](images/IMG_8720-rev-1.2-small.jpg) | 1.2 | added two buttons for cycle start/resume and feed hold. added probe connector. added inverter circuit for spindle enable.
+![KiCad pcb wiring](images/IMG_8720-rev-1.3-small.jpg) | 1.3 |  added leds for a
+
 ## Pins
 
 Arduino nano | GRBL 1.1 | DB25 red pcb | DB25 alu case version
@@ -142,6 +151,18 @@ http://www.linuxcnc.org/docs/2.6/html/gcode/gcode.html#sec:G38-probe
 G92 z19.2
 ```
 http://www.linuxcnc.org/docs/2.6/html/gcode/gcode.html#sec:G92
+
+## bCNC custom user button
+
+Evaluate gcodes to test with bCNC custom user button.
+
+```text
+G38.2 z-100 f5 
+G92 z19.7
+G0 z50 f600
+```
+
+![KiCad pcb wiring](images/bcnc-custom-button-for-probing.png)
 
 ## Compiling GRBL
 
