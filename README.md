@@ -47,7 +47,7 @@ Picture | Revision | Comment
 ![KiCad pcb wiring](images/IMG_8720-rev-1.0-small.jpg) | 1.0 | first dirty revision to get rid of the spaghetti grbl adapter ;o)
 ![KiCad pcb wiring](images/IMG_8720-rev-1.1-small.jpg) | 1.1 | added jumper headers for the two versions (red pcb, alu case) of the TB6560
 ![KiCad pcb wiring](images/IMG_8720-rev-1.2-small.jpg) | 1.2 | added two buttons for cycle start/resume and feed hold. added probe connector. added inverter circuit for spindle enable.
-![KiCad pcb wiring](images/IMG_8720-rev-1.3-small.jpg) | 1.3 |  added leds for a
+![KiCad pcb wiring](images/IMG_8720-rev-1.3-small.jpg) | 1.3 | added leds just for fun.
 
 ## Pins
 
