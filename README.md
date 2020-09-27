@@ -36,7 +36,7 @@ Just work in progress current revision 1.4 using GRBL 1.1h.
 
 ![KiCad pcb wiring](images/kicad-pcb-3d-preview.png)
 
-## BOM for revision 1.3
+## BOM for revision 1.4
 
 Quantity | Pos | Part
 --- | --- | ---
