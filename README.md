@@ -10,7 +10,7 @@ The adapter should also work with 3-axis TB6560 boards if the Pinout is the same
 * Gerber files are included if you want to order your own pcb for e.g. at [jlcpcb.com](https://jlcpcb.com/)
 * STL file of simple mount plate made with OpenSCAD is included if you have a 3d printer
 
-Just work in progress current revision 1.3 using GRBL 1.1h.
+Just work in progress current revision 1.4 using GRBL 1.1h.
 
 ![First try](images/IMG_8604.JPG)
 ![Version history](images/IMG_8616.JPG)
@@ -19,7 +19,7 @@ Just work in progress current revision 1.3 using GRBL 1.1h.
 ![Revision 1.3](images/IMG_8713.JPG)
 ![Used boards](images/tb6560-boards-in-use.jpeg)
 
-## Known bugs in rev. 1.3
+## Known bugs of rev. 1.3
 
 * holes for resistors are to close for "normal" resistors. my fault this is my first pcb project. i choose a wrong footprint.
 * silk outline for X, Y, Z leds on pcb has wrong orientation (my fault or bug in KiCad library?)
@@ -38,7 +38,7 @@ Just work in progress current revision 1.3 using GRBL 1.1h.
 
 ## BOM for revision 1.3
 
-Count | Pos | Part
+Quantity | Pos | Part
 --- | --- | ---
 1 | | pcb from pcb manufacturer of your choice
 1 | J1 | DSUB-25 female horizontal
@@ -63,6 +63,7 @@ Picture | Revision | Comment
 ![KiCad pcb wiring](images/IMG_8720-rev-1.1-small.jpg) | 1.1 | added jumper headers for the two versions (red pcb, alu case) of the TB6560
 ![KiCad pcb wiring](images/IMG_8720-rev-1.2-small.jpg) | 1.2 | added two buttons for cycle start/resume and feed hold. added probe connector. added inverter circuit for spindle enable.
 ![KiCad pcb wiring](images/IMG_8720-rev-1.3-small.jpg) | 1.3 | added leds just for fun.
+No real pcb image yet | 1.4 | fix wrong orientation of leds. fix wrong footprint of resistors. reroute affected tracks.
 
 ## Pins
 
