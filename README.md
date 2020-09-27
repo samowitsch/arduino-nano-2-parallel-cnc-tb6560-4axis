@@ -36,6 +36,21 @@ Just work in progress current revision 1.3 using GRBL 1.1h.
 
 ![KiCad pcb wiring](images/kicad-pcb-3d-preview.png)
 
+## BOM for revision 1.3
+
+Count | Pos | Part
+--- | --- | ---
+1 | | pcb from pcb manufacturer of your choice
+1 | J1 | DSUB-25 female horizontal
+5 | R1-R5 | 1k Ohm resistor
+1 | Q1 | 2N3904 transistor
+2 | SW1,SW2 | tactile push buttons 6x6
+3 | D1-D3 | led 5mm
+5 | J3,J4,J6,J8,J9 | jumper header 2 pins
+3 | J2,J5,J7 | jumper header 3 pins
+5 | | jumper
+2 | | 15 pin single row female straight header strip 2.54mm pitch for arduino nano
+
 ## Simple mount in OpenSCAD
 
 ![Simple mount in OpenSCAD](case/arduino-2-tb6560-4axis-simple-mount-open-scad.png)
